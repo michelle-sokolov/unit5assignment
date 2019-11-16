@@ -1,0 +1,159 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="unit5.css">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <title>Work Day Scheduler</title>
+  </head>
+
+  <body>
+        <script src="moments.js"></script> 
+    <header class="jumbotron">
+      <h1 class="display-3"><center>Work Day Scheduler</center></h1>
+      <p class="lead"><center>A simple calendar app for scheduling your work day</center></p>
+      <center><p id="currentDay" class="lead"></p></center>
+    </header>
+    <!--create 1 hr blocks from 9 am to 5 pm
+    give each time block a div class
+    -->
+
+    <div class="row">
+        <div class="column left">
+        <div class="9"><h4>9 am</h4></div>
+        </div>
+        <div class="column middle">
+                <input type="text" id="textfield9">
+                <div class = "newEvent9">  </div>
+        </div>
+        <div class="column right">
+            <button type="button" id="btn" onclick="go9()">Save</button>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="column left">
+        <div class="10"><h4>10 am</h4></div>
+        </div>
+        <div class="column middle">
+                <input type="text" id="textfield10">
+                <div class = "newEvent10">  </div>
+        </div>
+        <div class="column right">
+            <button type="button" id="btn" onclick="go10()">Save</button>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="column left">
+        <div class="10"><h4>11 am</h4></div>
+        </div>
+        <div class="column middle">
+                <input type="text" id="textfield11">
+                <div class = "newEvent11">  </div>
+        </div>
+        <div class="column right">
+            <button type="button" id="btn" onclick="go11()">Save</button>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+            <div class="column left">
+            <div class="12"> <h4>12 pm</h4></div>
+            </div>
+            <div class="column middle">
+                <input type="text" id="textfield12">
+                <div class = "newEvent12">  </div>
+        </div>
+        <div class="column right">
+            <button type="button" id="btn" onclick="go12()">Save</button>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+            <div class="column left">
+            <div class="1">   <h4>1 pm </h4></div>
+            </div>
+            <div class="column middle">
+                <input type="text" id="textfield1">
+                <div class = "newEvent1">  </div>
+        </div>
+        <div class="column right">
+            <button type="button" id="btn" onclick="go1()">Save</button>
+        </div>
+    </div>
+    <br>  
+    <div class="row">
+             <div class="column left"> 
+             <div class="2">  <h4>2 pm </h4></div>
+            </div>
+            <div class="column middle">
+                <input type="text" id="textfield2">
+                <div class = "newEvent2">  </div>
+        </div>
+        <div class="column right">
+            <button type="button" id="btn" onclick="go2()">Save</button>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+            <div class="column left">
+            <div class="3">   <h4>3 pm </h4></div>
+            </div>
+            <div class="column middle">
+                <input type="text" id="textfield3">
+                <div class = "newEvent3">  </div>
+        </div>
+        <div class="column right">
+            <button type="button" id="btn" onclick="go3()">Save</button>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+            <div class="column left">
+            <div class="4">   <h4>4 pm </h4></div>
+            </div>
+            <div class="column middle">
+                <input type="text" id="textfield4">
+                <div class = "newEvent4">  </div>
+        </div>
+        <div class="column right">
+            <button type="button" id="btn" onclick="go4()">Save</button>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+            <div class="column left">
+            <div class="5">   <h4>5 pm </h4></div>
+            </div>
+            <div class="column middle">
+                <input type="text" id="textfield5">
+                <div class = "newEvent5">  </div>
+        </div>
+        <div class="column right">
+            <button type="button" id="btn" onclick="go5()">Save</button>
+        </div>
+    </div>
+    
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="unit5.js"></script>  
+ 
+<script type="text/javascript">
+$("#currentDay").append(moment().format("MM ddd, YYYY hh:mm a"))
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    
+</body>
+</html>
